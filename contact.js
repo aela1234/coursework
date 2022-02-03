@@ -30,20 +30,20 @@ function insertRecord() {
   fN.value = "";
   fN.focus();
 
-  const sN = document.getElementById("sName");
+  const sN = document.getElementById("numberIN");
   const sNValue = sN.value;
   sN.value = "";
   sN.focus();
 
-  const age = document.getElementById("age");
-  const ageValue = age.value;
-  age.value = ""; // clear the field
-  age.focus();
+  const email = document.getElementById("emailIn");
+  const emailValue = email.value;
+  email.value = ""; // clear the field
+  email.focus();
 
-  const dob = document.getElementById("dob");
-  const dobValue = dob.value;
-  dob.value = "";
-  dob.focus();
+  const enquiry = document.getElementById("questionIn");
+  const enquiryValue = enquiry.value;
+  enquiry.value = "";
+  enquiry.focus();
 
   const data = myDBCxn.push();
   data.set({
