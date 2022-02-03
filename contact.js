@@ -24,7 +24,7 @@ function insertRecord() {
   emailField.value = "";
   emailField.focus();
 
-  const fN = document.getElementById("fName");
+  const fN = document.getElementById("nameIn");
 
   const fNvalue = fN.value;
   fN.value = "";
