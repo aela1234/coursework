@@ -62,31 +62,30 @@ ul.topnav li.right {float: right;}
 
   <!-- makes responsive --> 
 
-  <!-- 
+
 
 <style> 
 
-body{​​ background-color: lightblue;}​​ 
+body{ background-color: lightblue;}
 
  
 
-ul {​​ list-style-type: none;margin: 0; padding: 0; overflow: hidden; border: 1px solid #e7e7e7; background-color: #f3f3f3; }​​ 
-li {​​ float: left; }​​ 
-li a {​​ display: block; color: #666; text-align: center; padding: 14px 16px; text-decoration: none; }​​ 
-li a:hover:not(.active) {​​ background-color: #ddd; }​​ 
+ul {list-style-type: none;margin: 0; padding: 0; overflow: hidden; border: 1px solid #e7e7e7; background-color: #f3f3f3; }
+li {float: left; }
+li a { display: block; color: #666; text-align: center; padding: 14px 16px; text-decoration: none; }
+li a:hover:not(.active) {background-color: #ddd; } 
 
 
-li a.active {​​ color: white; background-color: #04AA6D; }​​ 
+li a.active { color: white; background-color: #04AA6D; }
 
-p {​​ text-align: center; font-family: "Comic Sans MC"; font-size:25px  }​​ 
+p { text-align: center; font-family: "Comic Sans MC"; font-size:25px  }
 
---> 
 
   <style> 
 
     /* Style all input fields */ 
 
-    input {​​ 
+    input {
 
       width: 100%; 
 
@@ -102,34 +101,34 @@ p {​​ text-align: center; font-family: "Comic Sans MC"; font-size:25px  }​
 
       margin-bottom: 16px; 
 
-    }​​ 
+    }
 
 
     /* Style the submit button */ 
 
-    input[type=submit] {​​ 
+    input[type=submit] {
 
       background-color: #04AA6D; 
 
       color: white; 
 
-    }​​ 
+    }
 
 
     /* Style the container for inputs */ 
 
-    .container {​​ 
+    .container {
 
       background-color: #f1f1f1; 
 
       padding: 20px; 
 
-    }​​
+    
 
 
     /* The message box is shown when the user clicks on the password field */ 
 
-    #message {​​ 
+    #message {
 
       display: none; 
 
@@ -143,31 +142,31 @@ p {​​ text-align: center; font-family: "Comic Sans MC"; font-size:25px  }​
 
       margin-top: 10px; 
 
-    }​​ 
+    }
 
  
 
-    #message p {​​ 
+    #message p { 
 
       padding: 10px 35px; 
 
       font-size: 18px; 
 
-    }​​ 
+    }
 
  
 
     /* Add a green text color and a checkmark when the requirements are right */ 
 
-    .valid {​​ 
+    .valid { 
 
       color: green; 
 
-    }​​ 
+    }
 
  
 
-    .valid:before {​​ 
+    .valid:before { 
 
       position: relative; 
 
@@ -175,21 +174,21 @@ p {​​ text-align: center; font-family: "Comic Sans MC"; font-size:25px  }​
 
       content: "✔"; 
 
-    }​​ 
+    }
 
  
 
     /* Add a red text color and an "x" when the requirements are wrong */ 
 
-    .invalid {​​ 
+    .invalid {
 
       color: red; 
 
-    }​​ 
+    }
 
  
 
-    .invalid:before {​​ 
+    .invalid:before {
 
       position: relative; 
 
@@ -197,21 +196,21 @@ p {​​ text-align: center; font-family: "Comic Sans MC"; font-size:25px  }​
 
       content: "✖"; 
 
-    }​​ 
+    }
 
  
 
-    * {​​ 
+    * { 
 
       box-sizing: border-box; 
 
-    }​​ 
+    } 
 
  
 
     /* Create three unequal columns that floats next to each other */ 
 
-    .column {​​ 
+    .column { 
 
       float: left; 
 
@@ -221,31 +220,31 @@ p {​​ text-align: center; font-family: "Comic Sans MC"; font-size:25px  }​
 
       /* Should be removed. Only for demonstration */ 
 
-    }​​ 
+    }
 
  
 
     .left, 
 
-    .right {​​ 
+    .right { 
 
       width: 25%; 
 
-    }​​ 
+    }
 
  
 
-    .middle {​​ 
+    .middle { 
 
       width: 50%; 
 
-    }​​ 
+    }
 
  
 
     /* Clear floats after the columns */ 
 
-    .row:after {​​ 
+    .row:after { 
 
       content: ""; 
 
@@ -253,15 +252,15 @@ p {​​ text-align: center; font-family: "Comic Sans MC"; font-size:25px  }​
 
       clear: both; 
 
-    }​​ 
+    }
 
  
 
-    footer {​​ 
+    footer {
 
       background-color: 34576F; 
 
-    }​​ 
+    }
 
   </style> 
 
@@ -360,63 +359,63 @@ var userName = document.getElementById("username");
 
 // pop up for the  
 
-myInput.onfocus = function() {​​ 
+myInput.onfocus = function() {
 
 document.getElementById("message").style.display = "block"; 
 
-}​​ 
+}
 
  
 
 // When the user clicks outside of the password field, hide the message box 
 
-myInput.onblur = function() {​​ 
+myInput.onblur = function() {
 
 document.getElementById("message").style.display = "none"; 
 
-}​​ 
+}
 
  
 
 // When the user starts to type something inside the password field 
 
-myInput.onkeyup = function() {​​ 
+myInput.onkeyup = function() {
 
 // Validate lowercase letters 
 
 var lowerCaseLetters = /[a-z]/g; 
 
-if(myInput.value.match(lowerCaseLetters)) {​​  
+if(myInput.value.match(lowerCaseLetters)) {
 
 letter.classList.remove("invalid"); 
 
 letter.classList.add("valid"); 
 
-}​​ else {​​ 
+} else {
 
 letter.classList.remove("valid"); 
 
 letter.classList.add("invalid"); 
 
-}​​ 
+}
 
 // Validate capital letters 
 
 var upperCaseLetters = /[A-Z]/g; 
 
-if(myInput.value.match(upperCaseLetters)) {​​  
+if(myInput.value.match(upperCaseLetters)) {
 
 capital.classList.remove("invalid"); 
 
 capital.classList.add("valid"); 
 
-}​​ else {​​ 
+}else {
 
 capital.classList.remove("valid"); 
 
 capital.classList.add("invalid"); 
 
-}​​ 
+}
 
  
 
@@ -424,60 +423,61 @@ capital.classList.add("invalid");
 
 var numbers = /[0-9]/g; 
 
-if(myInput.value.match(numbers)) {​​  
+if(myInput.value.match(numbers)) { 
 
 number.classList.remove("invalid"); 
 
 number.classList.add("valid"); 
 
-}​​ else {​​ 
+} else {
 
 number.classList.remove("valid"); 
 
 number.classList.add("invalid"); 
 
-}​​ 
+}
 
 // Validate length 
 
-if(myInput.value.length >= 8) {​​ 
+if(myInput.value.length >= 8) {
 
 length.classList.remove("invalid"); 
 
 length.classList.add("valid"); 
 
-}​​ else {​​ 
+} else {
 
 length.classList.remove("valid"); 
 
 length.classList.add("invalid"); 
 
-}​​ 
+}
 
-}​​ 
+}
 
-function getData() {​​ 
+function getData() {
 
 var passw = /Pass1234/; 
 
 var userN = "JaneDoe"; 
 
-if ((myInput.value.match(passw)) && (userName.value.match(userN))) {​​ // worked with "" also worked with == "JaneDoe" 
+if ((myInput.value.match(passw)) && (userName.value.match(userN))) {+
+  // worked with "" also worked with == "JaneDoe" 
 
 alert("You have successfully logged in"); 
 
 location.replace("profile.html"); 
 
-}​​ else {​​ 
+} else { 
 
 alert("Incorrect, please try again"); 
 
-}​​ 
+}
 
 document.getElementById("username").value = ""; 
 
 document.getElementById("psw").value = ""; 
 
-}​​ 
+}
 
 </script> 
