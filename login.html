@@ -1,5 +1,58 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: pink;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: lightpink;}
+
+ul.topnav li a.active {background-color: black;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+</style>
+</head>
+<body>
+
+<ul class="topnav">
+  <li><a class="active" href="homepage.html">Home</a></li>
+  <li><a href="products.html">Products</a></li>
+  <li><a href="contacts.html">Contact Us</a></li>
+  <li class="right"><a href="about.html">About</a></li>
+  <li class="right"><a href="login.html">Login</a></li>
+</ul>
+
+
+</body>
+  
+  
+  
+  
+  
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -154,13 +207,13 @@ myInput.onkeyup = function() {
 
           var userN = "JaneDoe";
 
-          if (myInput.value.match(passw) && userName.value.match(userN)) {
+          if (myInput.value.match(passw) && username.value.match(userN)) {
             
               // worked with "" also worked with == "JaneDoe"
 
-              alert("You have successfully logged in")
+              alert("You have successfully logged in");
             
-			location.replace("profile.html");
+			        location.replace("profile.html");
             
           } else {
             alert("Incorrect, please try again");
