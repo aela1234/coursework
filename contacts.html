@@ -54,23 +54,8 @@ ul.topnav li.right {float: right;}
 
       <br>
       <br>
-  <ul>  <!------creates unorder lists------>
-    <ul style="list-style-type:none;"> <!-----lists wil not be marked--->
-      
-    <li> <input id="nameIn" placeholder="Name" /> </li>
-      <br>
-    <li> <input id="numberIn" placeholder="Phone number" /> </li>
-      <br>
-    <li> <input id="emailIn" placeholder="Email Address"/> </li>
-      <br>
-     <li> <input id="questionIn" name="subject" placeholder="Enquiry" style="height:100px">
-       <br>
-      <li> <input type="submit" value="Submit"> </li>
-    
-      </ul>
-    <br />
-    
-<head>
+ 
+    <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -88,7 +73,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #f5347f;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -102,7 +87,7 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #ffd8cc;
   padding: 20px;
 }
 </style>
@@ -118,13 +103,10 @@ input[type=submit]:hover {
 
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
+    
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email address..">
+  
 
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
@@ -142,9 +124,6 @@ input[type=submit]:hover {
       <br>
       <br>
     
-      <br>
-      <br>
-      <br>
       <br>
       <br>
       <br>
