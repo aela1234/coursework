@@ -1,480 +1,444 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {margin: 0;}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+      }
 
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: pink;
-}
+      ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: pink;
+      }
 
-ul.topnav li {float: left;}
+      ul.topnav li {
+        float: left;
+      }
 
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+      ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
 
-ul.topnav li a:hover:not(.active) {background-color: lightpink;}
+      ul.topnav li a:hover:not(.active) {
+        background-color: lightpink;
+      }
 
-ul.topnav li a.active {background-color: black;}
+      ul.topnav li a.active {
+        background-color: black;
+      }
 
-ul.topnav li.right {float: right;}
+      ul.topnav li.right {
+        float: right;
+      }
 
-@media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-}
-</style>
-</head>
-<body>
+      @media screen and (max-width: 600px) {
+        ul.topnav li.right,
+        ul.topnav li {
+          float: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="topnav">
+      <li><a class="active" href="homepage.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contacts.html">Contact Us</a></li>
+      <li class="right"><a href="about.html">About</a></li>
+      <li class="right"><a href="login.htl">Login</a></li>
+    </ul>
+  </body>
 
-<ul class="topnav">
-  <li><a class="active" href="homepage.html">Home</a></li>
-  <li><a href="products.html">Products</a></li>
-  <li><a href="contacts.html">Contact Us</a></li>
-  <li class="right"><a href="about.html">About</a></li>
-  <li class="right"><a href="login.htl">Login</a></li>
-</ul>
+  <!DOCTYPE html>
 
+  <html>
+    <head>
+        
+      <link rel="stylesheet" href="style.css" />
 
-</body>
-  
-  <!DOCTYPE html> 
+        
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<html> 
+        
+      <!-- makes responsive -->
 
- 
+      <style>
 
-<head> 
+        body{ background-color: white;}
 
-  <link rel="stylesheet" href="style.css"> 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-  <!-- makes responsive --> 
+        ul {list-style-type: none;margin: 0; padding: 0; overflow: hidden; border: 1px solid #e7e7e7; background-color: #f3f3f3; }
+        li {float: left; }
+        li a { display: block; color: #666; text-align: center; padding: 14px 16px; text-decoration: none; }
+        li a:hover:not(.active) {background-color: #ddd; }
 
 
+        li a.active { color: white; background-color: #04AA6D; }
 
-<style> 
+        p { text-align: center; font-family: "Comic Sans MC"; font-size:25px  }
 
-body{ background-color: white;}
 
- 
+          <style>
 
-ul {list-style-type: none;margin: 0; padding: 0; overflow: hidden; border: 1px solid #e7e7e7; background-color: #f3f3f3; }
-li {float: left; }
-li a { display: block; color: #666; text-align: center; padding: 14px 16px; text-decoration: none; }
-li a:hover:not(.active) {background-color: #ddd; } 
+            /* Style all input fields */
 
+            input {
 
-li a.active { color: white; background-color: #04AA6D; }
+              width: 100%;
 
-p { text-align: center; font-family: "Comic Sans MC"; font-size:25px  }
+              padding: 12px;
 
+              border: 1px solid #ccc;
 
-  <style> 
+              border-radius: 4px;
 
-    /* Style all input fields */ 
+              box-sizing: border-box;
 
-    input {
+              margin-top: 6px;
 
-      width: 100%; 
+              margin-bottom: 16px;
 
-      padding: 12px; 
+            }
 
-      border: 1px solid #ccc; 
 
-      border-radius: 4px; 
+            /* Style the submit button */
 
-      box-sizing: border-box; 
+            input[type=submit] {
 
-      margin-top: 6px; 
+              background-color: #04AA6D;
 
-      margin-bottom: 16px; 
+              color: white;
 
-    }
+            }
 
 
-    /* Style the submit button */ 
+            /* Style the container for inputs */
 
-    input[type=submit] {
+            .container {
 
-      background-color: #04AA6D; 
+              background-color: #f1f1f1;
 
-      color: white; 
+              padding: 20px;
 
-    }
+            
 
 
-    /* Style the container for inputs */ 
+            /* The message box is shown when the user clicks on the password field */
 
-    .container {
+            #message {
 
-      background-color: #f1f1f1; 
+              display: none;
 
-      padding: 20px; 
+              background: #f1f1f1;
 
-    
+              color: #000;
 
+              position: relative;
 
-    /* The message box is shown when the user clicks on the password field */ 
+              padding: 20px;
 
-    #message {
+              margin-top: 10px;
 
-      display: none; 
+            }
 
-      background: #f1f1f1; 
 
-      color: #000; 
 
-      position: relative; 
+            #message p {
 
-      padding: 20px; 
+              padding: 10px 35px;
 
-      margin-top: 10px; 
+              font-size: 18px;
 
-    }
+            }
 
- 
 
-    #message p { 
 
-      padding: 10px 35px; 
+            /* Add a green text color and a checkmark when the requirements are right */
 
-      font-size: 18px; 
+            .valid {
 
-    }
+              color: green;
 
- 
+            }
 
-    /* Add a green text color and a checkmark when the requirements are right */ 
 
-    .valid { 
 
-      color: green; 
+            .valid:before {
 
-    }
+              position: relative;
 
- 
+              left: -35px;
 
-    .valid:before { 
+              content: "✔";
 
-      position: relative; 
+            }
 
-      left: -35px; 
 
-      content: "✔"; 
 
-    }
+            /* Add a red text color and an "x" when the requirements are wrong */
 
- 
+            .invalid {
 
-    /* Add a red text color and an "x" when the requirements are wrong */ 
+              color: red;
 
-    .invalid {
+            }
 
-      color: red; 
 
-    }
 
- 
+            .invalid:before {
 
-    .invalid:before {
+              position: relative;
 
-      position: relative; 
+              left: -35px;
 
-      left: -35px; 
+              content: "✖";
 
-      content: "✖"; 
+            }
 
-    }
 
- 
 
-    * { 
+            * {
 
-      box-sizing: border-box; 
+              box-sizing: border-box;
 
-    } 
+            }
 
- 
 
-    /* Create three unequal columns that floats next to each other */ 
 
-    .column { 
+            /* Create three unequal columns that floats next to each other */
 
-      float: left; 
+            .column {
 
-      padding: 10px; 
+              float: left;
 
-      height: 300px; 
+              padding: 10px;
 
-      /* Should be removed. Only for demonstration */ 
+              height: 300px;
 
-    }
+              /* Should be removed. Only for demonstration */
 
- 
+            }
 
-    .left, 
 
-    .right { 
 
-      width: 25%; 
+            .left,
 
-    }
+            .right {
 
- 
+              width: 25%;
 
-    .middle { 
+            }
 
-      width: 50%; 
 
-    }
 
- 
+            .middle {
 
-    /* Clear floats after the columns */ 
+              width: 50%;
 
-    .row:after { 
+            }
 
-      content: ""; 
 
-      display: table; 
 
-      clear: both; 
+            /* Clear floats after the columns */
 
-    }
+            .row:after {
 
- 
+              content: "";
 
-    footer {
+              display: table;
 
-      background-color: 34576F; 
+              clear: both;
 
-    }
+            }
 
-  </style> 
 
- 
 
-  <html> 
- 
+            footer {
 
-  <body> 
+              background-color: 34576F;
 
+            }
 
+          
+      </style>
 
-    <h3>Password Validation</h3> 
+      <html>
+          
+        <body>
+          <center>
+              
+          <h3>Password Validation</h3>
 
-    <p>Try to submit the form.</p> 
+              
+          <p>Try to submit the form.</p>
 
- 
+              
+          <div class="container">
+               
 
-    <div class="container"> 
+            <form>
+                    <!--username input box with id code -->
 
-   
+                    <label for="username">Username</label>
 
-<form> 
+              <input type="text" id="username" name="username" required />
 
+              <!--password input box with id code -->
 
-      <!--username input box with id code --> 
+              <label for="psw">Password</label>
 
-      <label for="username">Username</label> 
+              <input
+                type="password"
+                id="psw"
+                name="psw"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{​​8,}​​"
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                required
+              />
 
-<input type="text" id="username" name="username" required> 
+              <!--big green submit box, goes nowhere but redirects to a blank page -->
 
-<!--password input box with id code --> 
+              <button onclick="getData()">login</button>
+            </form>
+          </div>
 
-<label for="psw">Password</label> 
+          <!--message that shows when clicked into password box, is red when not entered, is green when is -->
 
-<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{​​8,}​​" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
+          <div id="message">
+            <h3>Password must contain the following:</h3>
 
-<!--big green submit box, goes nowhere but redirects to a blank page --> 
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
 
-<input type="submit" value="Submit"> 
+            <p id="capital" class="invalid">
+              A <b>capital (uppercase)</b> letter
+            </p>
 
-<button onclick="getData()">  
+            <p id="number" class="invalid">A <b>number</b></p>
 
-login 
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+          </div>
+          </center>
+        </body>
+      </html>
 
-</button> 
+      <script>
+        // turns id into a variable for later use
 
-</form> 
+        var myInput = document.getElementById("psw");
 
-</div> 
+        var letter = document.getElementById("letter");
 
-<!--message that shows when clicked into password box, is red when not entered, is green when is --> 
+        var capital = document.getElementById("capital");
 
-<div id="message"> 
+        var number = document.getElementById("number");
 
-<h3>Password must contain the following:</h3> 
+        var length = document.getElementById("length");
 
-<p id="letter" class="invalid">A <b>lowercase</b> letter</p> 
+        var userName = document.getElementById("username");
 
-<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p> 
+        // When the user clicks on the password field, show the message box
 
-<p id="number" class="invalid">A <b>number</b></p> 
+        // pop up for the
 
-<p id="length" class="invalid">Minimum <b>8 characters</b></p> 
+        myInput.onfocus = function () {
+          document.getElementById("message").style.display = "block";
+        };
 
-</div> 
+        // When the user clicks outside of the password field, hide the message box
 
-</body> 
+        myInput.onblur = function () {
+          document.getElementById("message").style.display = "none";
+        };
 
-</html> 
+        // When the user starts to type something inside the password field
 
- 
+        myInput.onkeyup = function () {
+          // Validate lowercase letters
 
-<script> 
+          var lowerCaseLetters = /[a-z]/g;
 
-// turns id into a variable for later use  
+          if (myInput.value.match(lowerCaseLetters)) {
+            letter.classList.remove("invalid");
 
-var myInput = document.getElementById("psw"); 
+            letter.classList.add("valid");
+          } else {
+            letter.classList.remove("valid");
 
-var letter = document.getElementById("letter"); 
+            letter.classList.add("invalid");
+          }
 
-var capital = document.getElementById("capital"); 
+          // Validate capital letters
 
-var number = document.getElementById("number"); 
+          var upperCaseLetters = /[A-Z]/g;
 
-var length = document.getElementById("length"); 
+          if (myInput.value.match(upperCaseLetters)) {
+            capital.classList.remove("invalid");
 
-var userName = document.getElementById("username"); 
+            capital.classList.add("valid");
+          } else {
+            capital.classList.remove("valid");
 
- 
+            capital.classList.add("invalid");
+          }
 
-// When the user clicks on the password field, show the message box 
+          // Validate numbers
 
-// pop up for the  
+          var numbers = /[0-9]/g;
 
-myInput.onfocus = function() {
+          if (myInput.value.match(numbers)) {
+            number.classList.remove("invalid");
 
-document.getElementById("message").style.display = "block"; 
+            number.classList.add("valid");
+          } else {
+            number.classList.remove("valid");
 
-}
+            number.classList.add("invalid");
+          }
 
- 
+          // Validate length
 
-// When the user clicks outside of the password field, hide the message box 
+          if (myInput.value.length >= 8) {
+            length.classList.remove("invalid");
 
-myInput.onblur = function() {
+            length.classList.add("valid");
+          } else {
+            length.classList.remove("valid");
 
-document.getElementById("message").style.display = "none"; 
+            length.classList.add("invalid");
+          }
+        };
 
-}
+        function getData() {
+          var passw = /Pass1234/;
 
- 
+          var userN = "JaneDoe";
 
-// When the user starts to type something inside the password field 
+          if (myInput.value.match(passw) && userName.value.match(userN)) {
+            +(
+              // worked with "" also worked with == "JaneDoe"
 
-myInput.onkeyup = function() {
+              alert("You have successfully logged in")
+            );
 
-// Validate lowercase letters 
+            location.replace("profile.html");
+          } else {
+            alert("Incorrect, please try again");
+          }
 
-var lowerCaseLetters = /[a-z]/g; 
+          document.getElementById("username").value = "";
 
-if(myInput.value.match(lowerCaseLetters)) {
-
-letter.classList.remove("invalid"); 
-
-letter.classList.add("valid"); 
-
-} else {
-
-letter.classList.remove("valid"); 
-
-letter.classList.add("invalid"); 
-
-}
-
-// Validate capital letters 
-
-var upperCaseLetters = /[A-Z]/g; 
-
-if(myInput.value.match(upperCaseLetters)) {
-
-capital.classList.remove("invalid"); 
-
-capital.classList.add("valid"); 
-
-}else {
-
-capital.classList.remove("valid"); 
-
-capital.classList.add("invalid"); 
-
-}
-
- 
-
-// Validate numbers 
-
-var numbers = /[0-9]/g; 
-
-if(myInput.value.match(numbers)) { 
-
-number.classList.remove("invalid"); 
-
-number.classList.add("valid"); 
-
-} else {
-
-number.classList.remove("valid"); 
-
-number.classList.add("invalid"); 
-
-}
-
-// Validate length 
-
-if(myInput.value.length >= 8) {
-
-length.classList.remove("invalid"); 
-
-length.classList.add("valid"); 
-
-} else {
-
-length.classList.remove("valid"); 
-
-length.classList.add("invalid"); 
-
-}
-
-}
-
-function getData() {
-
-var passw = /Pass1234/; 
-
-var userN = "JaneDoe"; 
-
-if ((myInput.value.match(passw)) && (userName.value.match(userN))) {+
-  // worked with "" also worked with == "JaneDoe" 
-
-alert("You have successfully logged in"); 
-
-location.replace("profile.html"); 
-
-} else { 
-
-alert("Incorrect, please try again"); 
-
-}
-
-document.getElementById("username").value = ""; 
-
-document.getElementById("psw").value = ""; 
-
-}
-
-</script> 
+          document.getElementById("psw").value = "";
+        }
+      </script>
+    </head>
+  </html>
+</html>
