@@ -1,435 +1,167 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        margin: 0;
-      }
-
-      ul.topnav {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: pink;
-      }
-
-      ul.topnav li {
-        float: left;
-      }
-
-      ul.topnav li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-
-      ul.topnav li a:hover:not(.active) {
-        background-color: lightpink;
-      }
-
-      ul.topnav li a.active {
-        background-color: black;
-      }
-
-      ul.topnav li.right {
-        float: right;
-      }
-
-      @media screen and (max-width: 600px) {
-        ul.topnav li.right,
-        ul.topnav li {
-          float: none;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <ul class="topnav">
-      <li><a class="active" href="homepage.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="contacts.html">Contact Us</a></li>
-      <li class="right"><a href="about.html">About</a></li>
-      <li class="right"><a href="login.htl">Login</a></li>
-    </ul>
-  </body>
-
-  <!DOCTYPE html>
-
-  <html>
-    <head>
-        
-      <link rel="stylesheet" href="style.css" />
-
-        
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        
-      <!-- makes responsive -->
-
-      <style>
-
-        body{ background-color: white;}
-
-
-
-        ul {list-style-type: none;margin: 0; padding: 0; overflow: hidden; border: 1px solid #e7e7e7; background-color: #f3f3f3; }
-        li {float: left; }
-        li a { display: block; color: #666; text-align: center; padding: 14px 16px; text-decoration: none; }
-        li a:hover:not(.active) {background-color: #ddd; }
-
-
-        li a.active { color: white; background-color: #04AA6D; }
-
-        p { text-align: center; font-family: "Comic Sans MC"; font-size:25px  }
-
-
-          <style>
-
-            /* Style all input fields */
-
-            input {
-
-              width: 100%;
-
-              padding: 12px;
-
-              border: 1px solid #ccc;
-
-              border-radius: 4px;
-
-              box-sizing: border-box;
-
-              margin-top: 6px;
-
-              margin-bottom: 16px;
-
-            }
-
-
-            /* Style the submit button */
-
-            input[type=submit] {
-
-              background-color: #04AA6D;
-
-              color: white;
-
-            }
-
-
-            /* Style the container for inputs */
-
-            .container {
-
-              background-color: #f1f1f1;
-
-              padding: 20px;
-
-            
-
-
-            /* The message box is shown when the user clicks on the password field */
-
-            #message {
-
-              display: none;
-
-              background: #f1f1f1;
-
-              color: #000;
-
-              position: relative;
-
-              padding: 20px;
-
-              margin-top: 10px;
-
-            }
-
-
-
-            #message p {
-
-              padding: 10px 35px;
-
-              font-size: 18px;
-
-            }
-
-
-
-            /* Add a green text color and a checkmark when the requirements are right */
-
-            .valid {
-
-              color: green;
-
-            }
-
-
-
-            .valid:before {
-
-              position: relative;
-
-              left: -35px;
-
-              content: "✔";
-
-            }
-
-
-
-            /* Add a red text color and an "x" when the requirements are wrong */
-
-            .invalid {
-
-              color: red;
-
-            }
-
-
-
-            .invalid:before {
-
-              position: relative;
-
-              left: -35px;
-
-              content: "✖";
-
-            }
-
-
-
-            * {
-
-              box-sizing: border-box;
-
-            }
-
-
-
-            /* Create three unequal columns that floats next to each other */
-
-            .column {
-
-              float: left;
-
-              padding: 10px;
-
-              height: 300px;
-
-              /* Should be removed. Only for demonstration */
-
-            }
-
-
-
-            .left,
-
-            .right {
-
-              width: 25%;
-
-            }
-
-
-
-            .middle {
-
-              width: 50%;
-
-            }
-
-
-
-            /* Clear floats after the columns */
-
-            .row:after {
-
-              content: "";
-
-              display: table;
-
-              clear: both;
-
-            }
-
-
-
-            footer {
-
-              background-color: 34576F;
-
-            }
-
-          
-      </style>
-
-      <html>
-          
-        <body>
-          <center>
-              
-          <h3>Password Validation</h3>
-
-              
-          <p>Try to submit the form.</p>
-
-              
-          <div class="container">
-               
-
-            <form>
-                    <!--username input box with id code -->
-
-                    <label for="username">Username</label>
-
-              <input type="text" id="username" name="username" required />
-
-              <!--password input box with id code -->
-
-              <label for="psw">Password</label>
-
-              <input
-                type="password"
-                id="psw"
-                name="psw"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{​​8,}​​"
-                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                required
-              />
-
-              <!--big green submit box, goes nowhere but redirects to a blank page -->
-
-              <button onclick="getData()">login</button>
-            </form>
-          </div>
-
-          <!--message that shows when clicked into password box, is red when not entered, is green when is -->
-
-          <div id="message">
-            <h3>Password must contain the following:</h3>
-
-            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-
-            <p id="capital" class="invalid">
-              A <b>capital (uppercase)</b> letter
-            </p>
-
-            <p id="number" class="invalid">A <b>number</b></p>
-
-            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-          </div>
-          </center>
-        </body>
-      </html>
-
-      <script>
-        // turns id into a variable for later use
-
-        var myInput = document.getElementById("psw");
-
-        var letter = document.getElementById("letter");
-
-        var capital = document.getElementById("capital");
-
-        var number = document.getElementById("number");
-
-        var length = document.getElementById("length");
-
-        var userName = document.getElementById("username");
-
-        // When the user clicks on the password field, show the message box
-
-        // pop up for the
-
-        myInput.onfocus = function () {
-          document.getElementById("message").style.display = "block";
-        };
-
-        // When the user clicks outside of the password field, hide the message box
-
-        myInput.onblur = function () {
-          document.getElementById("message").style.display = "none";
-        };
-
-        // When the user starts to type something inside the password field
-
-        myInput.onkeyup = function () {
-          // Validate lowercase letters
-
-          var lowerCaseLetters = /[a-z]/g;
-
-          if (myInput.value.match(lowerCaseLetters)) {
-            letter.classList.remove("invalid");
-
-            letter.classList.add("valid");
-          } else {
-            letter.classList.remove("valid");
-
-            letter.classList.add("invalid");
-          }
-
-          // Validate capital letters
-
-          var upperCaseLetters = /[A-Z]/g;
-
-          if (myInput.value.match(upperCaseLetters)) {
-            capital.classList.remove("invalid");
-
-            capital.classList.add("valid");
-          } else {
-            capital.classList.remove("valid");
-
-            capital.classList.add("invalid");
-          }
-
-          // Validate numbers
-
-          var numbers = /[0-9]/g;
-
-          if (myInput.value.match(numbers)) {
-            number.classList.remove("invalid");
-
-            number.classList.add("valid");
-          } else {
-            number.classList.remove("valid");
-
-            number.classList.add("invalid");
-          }
-
-          // Validate length
-
-          if (myInput.value.length >= 8) {
-            length.classList.remove("invalid");
-
-            length.classList.add("valid");
-          } else {
-            length.classList.remove("valid");
-
-            length.classList.add("invalid");
-          }
-        };
-
-        function getData() {
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style all input fields */
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+</style>
+</head>
+<body>
+
+<h3>Password Validation</h3>
+<p>Try to submit the form.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="psw">Password</label>
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    
+    <button type="submit" value="Submit" onclick = "getData()"> Submit</button>
+  </form>
+</div>
+
+<div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+				
+<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+var username = document.getElementById("username");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+
+ function getData() {
           var passw = /Pass1234/;
 
           var userN = "JaneDoe";
 
           if (myInput.value.match(passw) && userName.value.match(userN)) {
-            +(
+            
               // worked with "" also worked with == "JaneDoe"
 
               alert("You have successfully logged in")
-            );
-
-            location.replace("profile.html");
+            
+			location.replace("profile.html");
+            
           } else {
             alert("Incorrect, please try again");
           }
@@ -438,7 +170,7 @@
 
           document.getElementById("psw").value = "";
         }
-      </script>
-    </head>
-  </html>
+</script>
+
+</body>
 </html>
