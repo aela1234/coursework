@@ -52,7 +52,7 @@ ul.topnav li.right {float: right;}
   
   
   
-  
+<center> 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -69,13 +69,13 @@ input {
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #F99DBC;
   color: white;
 }
 
 /* Style the container for inputs */
 .container {
-  background-color: #f1f1f1;
+  background-color: #fdd9e5;
   padding: 20px;
 }
 
@@ -119,8 +119,8 @@ input[type=submit] {
 </head>
 <body>
 
-<h3>Password Validation</h3>
-<p>Try to submit the form.</p>
+<h3>Login</h3>
+  </center>
 
 <div class="container">
   <form action="/action_page.php">
@@ -129,8 +129,9 @@ input[type=submit] {
 
     <label for="psw">Password</label>
     <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-    
+    <center>
     <button type="submit" value="Submit" onclick = "getData()"> Submit</button>
+      
   </form>
 </div>
 
