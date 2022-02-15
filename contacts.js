@@ -10,7 +10,7 @@ const firebaseConfig = {
   measurementId: "G-VWZC88ZMEN"
 };
 
-const app = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 const myDBCxn = firebase.database().ref("/contacts");
 
@@ -19,14 +19,8 @@ btn2.addEventListener("click", insertRecord);
 
 function insertRecord() {
   alert("SUBMIT clicked!!!");
-  const emailField = document.getElementById("email");
-  const emailFieldValue = emailField.value;
-
-  emailField.value = "";
-  emailField.focus();
-
+ 
   const fN = document.getElementById("fname");
-
   const fNvalue = fN.value;
   fN.value = "";
   fN.focus();
@@ -36,18 +30,17 @@ function insertRecord() {
   sN.value = "";
   sN.focus();
 
- 
+  const emailField = document.getElementById("email");
+  const emailFieldValue = emailField.value;
 
-  const enquiry = document.getElementById("subject");
-  const enquiryValue = enquiry.value;
-  enquiry.value = "";
-  enquiry.focus();
+  emailField.value = "";
+  emailField.focus();
+
+   const enquiry = document.getElementById("subject");
+   const enquiryValue = enquiry.value;
+    enquiry.value = "";
+    enquiry.focus();
 
   const data = myDBCxn.push();
-  data.set({
-    email: emailFieldValue,
-    fName: fNvalue,
-    sName: sNValue,
-    enquiry: enquiryValue,
-  });
+  data.set({email: emailFieldValue, fName: fNvalue, sName: sNValue, enquiry: enquiryValue,});
 }
