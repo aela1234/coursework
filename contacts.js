@@ -1,3 +1,4 @@
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyAjTYSE7ftImY5Tzxy-qgKRKau9QTBIZYw",
   authDomain: "fir-comp-sci-943f6.firebaseapp.com",
@@ -9,7 +10,7 @@ const firebaseConfig = {
   measurementId: "G-VWZC88ZMEN"
 };
 
-firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
 
 const myDBCxn = firebase.database().ref("/contacts");
 
@@ -24,23 +25,20 @@ function insertRecord() {
   emailField.value = "";
   emailField.focus();
 
-  const fN = document.getElementById("nameIn");
+  const fN = document.getElementById("fname");
 
   const fNvalue = fN.value;
   fN.value = "";
   fN.focus();
 
-  const sN = document.getElementById("numberIN");
+  const sN = document.getElementById("lname");
   const sNValue = sN.value;
   sN.value = "";
   sN.focus();
 
-  const email = document.getElementById("emailIn");
-  const emailValue = email.value;
-  email.value = ""; // clear the field
-  email.focus();
+ 
 
-  const enquiry = document.getElementById("questionIn");
+  const enquiry = document.getElementById("subject");
   const enquiryValue = enquiry.value;
   enquiry.value = "";
   enquiry.focus();
@@ -50,7 +48,6 @@ function insertRecord() {
     email: emailFieldValue,
     fName: fNvalue,
     sName: sNValue,
-    age: ageValue,
-    dob: dobValue
+    enquiry: enquiryValue,
   });
 }
