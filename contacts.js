@@ -44,3 +44,9 @@ function insertRecord() {
   const data = myDBCxn.push();
   data.set({email: emailFieldValue, fName: fNvalue, sName: sNValue, enquiry: enquiryValue,});
 }
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js">
+
+
+
+<script src="contact.js">
