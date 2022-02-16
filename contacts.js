@@ -50,3 +50,4 @@ function insertRecord() {
 
 
 <script src="contact.js">
+  
