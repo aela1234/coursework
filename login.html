@@ -52,8 +52,7 @@ ul.topnav li.right {float: right;}
   
   
   
-<center>  <!-- centers heading -->
-<head>
+<head> <!-- creates heading-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 /* Style all input fields */
@@ -117,8 +116,9 @@ input[type=login] {
 }
 </style> <!-- closes style-->
 </head>  <!-- closes head-->
-<body>  <!-- opens body--->
 
+  
+<center> <!--opens centre tag-->
 <h3>Login</h3>  <!-- creates heading 3 called 'loigin' -->
   </center>  <!-- closes centre-->
 
@@ -216,7 +216,7 @@ myInput.onkeyup = function() {
             
 			        location.replace("profile.html");  // takes you to profile page after successful login
             
-          } else { // if login failed alert 'incorrect '
+          } else { // if login failed alert 'incorrect please try again'
             alert("Incorrect, please try again");
           }
 
@@ -224,9 +224,10 @@ myInput.onkeyup = function() {
 
           document.getElementById("psw").value = "";
         }
-</script>
+  
+</script> <!-- closes script tag-->
 
-    <center>
+    <center> <!-- centres telephone number and email address-->
      <br> <!----creates line break-->
       <br>
       <br>
@@ -248,11 +249,13 @@ myInput.onkeyup = function() {
 
     <br>
       <br>
-      <p2>
+      <p2>  <!-- creates paragraph 2 for telephone number and email address-->
       Telephone number: +353 (405) 87558 
         <br>
         <br>
         Email address: Homeology@mail.com
 
-      </p2>
-</html>
+      </p2> <!-- closes paragraph2-->
+  </center> <!-- closes centre-->
+</html> <!-- closes html-->
+  
