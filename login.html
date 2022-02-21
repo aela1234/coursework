@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html> <!-- opnes html -->
 
-<head>
+<head> <!-- opens head--->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {margin: 0;}
@@ -34,25 +34,25 @@ ul.topnav li.right {float: right;}
   ul.topnav li.right, 
   ul.topnav li {float: none;}
 }
-</style>
-</head>
-<body>
+</style> <!-- closes style-->
+</head> <!-- closes head-->
+<body> <!-- opens body-->
 
-<ul class="topnav">
+<ul class="topnav"> <!-- creates unordered list called 'topnav'-->
   <li><a class="active" href="homepage.html">Home</a></li>
   <li><a href="products.html">Products</a></li>
   <li><a href="contacts.html">Contact Us</a></li>
   <li class="right"><a href="about.html">About</a></li>
   <li class="right"><a href="login.html">Login</a></li>
-</ul>
+</ul> <!-- closes unordered list-->
 
 
-</body>
+</body> <!--closes body-->
   
   
   
   
-<center> 
+<center>  <!-- centers heading -->
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -115,12 +115,12 @@ input[type=login] {
   left: -35px;
   content: "✖";
 }
-</style>
-</head>
-<body>
+</style> <!-- closes style-->
+</head>  <!-- closes head-->
+<body>  <!-- opens body--->
 
-<h3>Login</h3>
-  </center>
+<h3>Login</h3>  <!-- creates heading 3 called 'loigin' -->
+  </center>  <!-- closes centre-->
 
 <div class="container">
   <form action="/action_page.php">
@@ -212,11 +212,11 @@ myInput.onkeyup = function() {
             
               // worked with "" also worked with == "JaneDoe"
 
-              alert("You have successfully logged in");
+              alert("You have successfully logged in"); //alerts pops up when you have logged in
             
-			        location.replace("profile.html");
+			        location.replace("profile.html");  // takes you to profile page after successful login
             
-          } else {
+          } else { // if login failed alert 'incorrect '
             alert("Incorrect, please try again");
           }
 
