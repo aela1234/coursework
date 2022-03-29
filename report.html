@@ -46,54 +46,55 @@
             Investiagtion and plan
           </h2>
           <p>
-            For my final coursework project, I was tasked with designing a smart home system. With smart home being one of the buzzwords of 2022 I was intrigued by this project. I had to create an embedded system that could be used as part of a home automation system. It had several basic requirements that needed to be met. I also had to create an interactive website that allowed users to see what the product was about.  
-
+            For my final coursework project, I was tasked with designing a smart home system. With smart home being one of the buzzwords of 2022 I was intrigued by this project. I had to create an embedded system that could be used as part of a home automation system. It had several basic requirements that needed to be met. I also had to create an interactive website that allowed users to see what the product was about.  <br>
+<br>
  
 
-After researching many different ideas and methods of approach I originally decided to design an alarm system, but after further investigation and research I realised that was not achievable due to it not reaching the requirements I wanted it to reach. I decided to consult with my teacher about my idea and they suggested a soil moisture sensor which is the final idea I ended up going with. The soil moisture sensor had the requirements I was looking for like temperature sensor, microbits that communicate, and ThingSpeak. 
-
+After researching many different ideas and methods of approach I originally decided to design an alarm system, but after further investigation and research I realised that was not achievable due to it not reaching the requirements I wanted it to reach. I decided to consult with my teacher about my idea and they suggested a soil moisture sensor which is the final idea I ended up going with. The soil moisture sensor had the requirements I was looking for like temperature sensor, microbits that communicate, and ThingSpeak. <br>
+<br>
  
 
-The requirements for my artefact are radio communication, temperature sensor, Wi-Fi connection, ThingSpeak and a pump that waters your plant automatically. The idea of my project is that it is put in a greenhouse and detects the amount of moisture in the soil of your plant and automatically waters it if it gets too dry. It also detects the temperature and alerts the other microbit inside your home if it is too hot or cold for your plant by a traffic light led system.  
-
+The requirements for my artefact are radio communication, temperature sensor, Wi-Fi connection, ThingSpeak and a pump that waters your plant automatically. The idea of my project is that it is put in a greenhouse and detects the amount of moisture in the soil of your plant and automatically waters it if it gets too dry. It also detects the temperature and alerts the other microbit inside your home if it is too hot or cold for your plant by a traffic light led system. <br> 
+<br>
  
 
-The microbits communicate to each other through radio communication, with one also connected to Thingspeak which is continuously uploading data of the temperature to the user's profile.  
-
+The microbits communicate to each other through radio communication, with one also connected to Thingspeak which is continuously uploading data of the temperature to the user's profile.  <br>
+<br>
  
 
-An automatic IOT that opens and closes windows if it gets too hot or cold is something that I should have included in my final artefact. This would have improved the system and made it completely hands free.  
+An automatic IOT that opens and closes windows if it gets too hot or cold is something that I should have included in my final artefact. This would have improved the system and made it completely hands free.  <br>
           </p>
           
           <h2>
             Design
           </h2>
           <p>
-           After my researching and planning was finished, I began on the design of my artefact. I started with the basics of getting two microbits to communicate with each other through radio signal and went from there to get the artefact to meet the brief. I then got one microbit set up with the moisture sensor by using forever loops and if statements. I designed it so that it used pins and LED patterns to indicate what was happening. After I got that to work, I moved onto the next microbit that indicates when the temperature is too hot, too cold, or perfect. Uses a traffic light system that shows what is going on. It uses a ‘on radio received’ loop to carry out the actions needed.  
-
+           After my researching and planning was finished, I began on the design of my artefact. I started with the basics of getting two microbits to communicate with each other through radio signal and went from there to get the artefact to meet the brief. I then got one microbit set up with the moisture sensor by using forever loops and if statements. I designed it so that it used pins and LED patterns to indicate what was happening. After I got that to work, I moved onto the next microbit that indicates when the temperature is too hot, too cold, or perfect. Uses a traffic light system that shows what is going on. It uses a ‘on radio received’ loop to carry out the actions needed.<br>  
+<br>
  
 
 After I had all the code working, I moved onto setting up the microbit and wiring it up. Doing this I encountered many problems like wires not working properly and Wi-Fi connection being unstable. I had to watch videos and research different methods of how to properly wire the artefact which took a bit of time, but I got it working properly in the end. The Wi-Fi connection was difficult to fix as there was an unstable connection where I was setting it up. I eventually got a stable connection to be able to demonstrate my project by using my hotspot on my phone. 
-
- 
+<br>
+ <br>
 
 The microbit that measures the temperature records the data to thingspeak and uploads it for the user to see. Thingspeak constantly uploads the data every minute or so and graphs the data for it to be easy to read. The other microbit sends power to the water pump to allow it to work.  
-
- 
+<br>
+ <br>
 
 Each coloured wire has a different purpose, the red wire provides power to the sensor, the black wire is the grounding wire, and the yellow wire is the trigger. 
-
+<br>
+            <br>
 This is an overall efficient design that can be worked automatically with minimal user interference. 
-
- 
+<br>
+ <br>
 
         
 
  
 
 The wires on the receiving microbit are colour coded so it is simple to follow and understand. The green wire provides power to the green LED. The red wire to the red LED and yellow wire to yellow LED. 
-
- 
+<br>
+ <br>
 
  
           </p>
@@ -103,15 +104,16 @@ The wires on the receiving microbit are colour coded so it is simple to follow a
           </h2>
           <p>
             I first started thinking about my idea when the coursework was announced on December 8th. I used teachers' ideas and the URLs provided in the brief to help me produce my idea. I asked my teacher about my idea and then started wire framing and planning my idea for my website. After a few days I had my plan and started to implement it properly on my website. Creating the website was a difficult but fun task with a lot of easy fixes like added curly brackets or punctuation to the code. I used an agile approach to be able to go back and fix any mistakes or make any changes needed 
-
- 
+<br>
+ <br>
 
  One major problem I ran into was getting the validation check to work properly. This took a lot of trial and error to get it to work. The main problem was getting the validations to turn green when they were correct and getting the subsequent approval to pop up. The validation check was one of the requirements that I needed so it was important that I got it to work. Through many trials and rechecking code and looking at different methods on how to get it to work efficiently, I got it up and running with luckily no other problems to the validation.  
-
- 
+<br>
+ <br>
 
 When I had my website complete, I moved onto the design of my artefact. This took some time as I had to change my idea after realising my original was not achievable. This set me back a few days trying to plan and design a new idea. When I got my new idea ready and planned out, I got right back to work without hesitation. My original idea was to make an alarm system that alerted you when your front door was opened. After beginning this I realised I could not add things like a temperature sensor or an LED light system in a way that I wanted to work so I went back to the drawing board with my teacher who suggested a soil moisture sensor. I thought this was an innovative idea as things like the temperature sensor and light system could be added effectively the way I wanted them to be. I got to work on the coding aspect of the artefact and ran into a few problems like forgetting to add pins to the correct place that were an easy fix.  
-
+<br>
+            <br>
 During the process of testing, I originally had the microbit LEDs to show a happy face or sad face to show what the temperature was too hot or too cold. This was not effective or easy to use as it was difficult to see the faces and it was not exactly suitable for a “smart home.” I changed from the faces to the words “Perfect", “Hot” and “Cold” moving across the face of the microbit. The screen of the microbit was not big enough to properly see the words so I decided to go with the traffic light system as it was simple, effective, and easy to understand. As aforementioned the indication system of the different light colours. 
           </p>
           
