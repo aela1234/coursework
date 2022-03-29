@@ -57,7 +57,7 @@ to this section's matching END comment to see page-specific styles.
   height: 2.75rem;
   align-items: center;
   cursor: pointer;
-  background: #FFFFFF;
+  background: #pink;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
